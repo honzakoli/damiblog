@@ -1,0 +1,327 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"componen",
+				"component_navbar"
+			],
+			[
+				"buil",
+				"http_build_query"
+			],
+			[
+				"build",
+				"buildUrl"
+			],
+			[
+				"SQ",
+				"SQLITE_ASSOC"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"form",
+				"form-row"
+			],
+			[
+				"border-r",
+				"border-radius\tproperty"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"drop",
+				"dropdown-item"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/wamp/www/backup/damiblog_backup_31_5_2019/.git/COMMIT_EDITMSG",
+			"settings":
+			{
+				"buffer_size": 576,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/backup/damiblog_backup_31_5_2019/.git/COMMIT_EDITMSG",
+		"/C/wamp/www/backup/damiblog_backup_31_5_2019/gcn.md",
+		"/C/wamp/www/damiblog/pages/login.php",
+		"/C/wamp/www/damiblog/pages/blogpost_intro.php",
+		"/C/wamp/www/damiblog/pages/blogpost_view.php",
+		"/C/wamp/www/damiblog/utils/utils.php",
+		"/C/wamp/www/damiblog/data/database.php",
+		"/C/wamp/www/damiblog/pages/indexTwo.php",
+		"/C/wamp/www/damiblog/components/navbar.php",
+		"/C/wamp/www/damiblog/index.php",
+		"/C/wamp/www/damiblog/assets/bootstrap/bootstrap.php",
+		"/C/wamp/www/damiblog/utils/constants.php",
+		"/C/wamp/www/damiblog/backup_code.php",
+		"/C/wamp/www/damiblog/mainpage.php",
+		"/C/wamp/www/damiblog/blogpost_intro.php",
+		"/C/wamp/www/damiblog/blogpost_view.php",
+		"/C/wamp/www/damiblog/login.php",
+		"/C/wamp/www/damiblog/utils/variables.php",
+		"/C/wamp/www/damiblog/database.php",
+		"/C/wamp/www/damiblog/utils.php",
+		"/C/wamp/www/damiblog/html_template.html",
+		"/C/wamp/www/damiblog/pages/navbar.php",
+		"/C/wamp/www/damiblog/pages/mainpage.php",
+		"/C/wamp/www/damiblog/utility/utils.php",
+		"/C/wamp/www/damiblog/blogspot_template.php.html",
+		"/C/wamp/www/damiblog/blogspot_template.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/send_mail.php",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/index.html",
+		"/C/wamp/www/index.php",
+		"/C/wamp/www/dami_blog/index.php",
+		"/C/wamp/www/dami_blog/sqlite.php",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/jk_labs-declaration",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/feedback.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/error_message.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/error_message2.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/styles.css",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/kontakty_1.html",
+		"/C/Users/Honza/Desktop/WEBY/EDUCATIVE/FullscreenOverlayStyles/index8.html",
+		"/C/Users/Honza/Desktop/WEBY/EDUCATIVE/FullscreenOverlayStyles/css/style8.css",
+		"/C/Users/Honza/Desktop/WEBY/EDUCATIVE/FullscreenOverlayStyles/js/demo7.js",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/kontakty.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/zalohy+navrhy/20-2-2019-2/index.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/zalohy+navrhy/20-2-2019_1/header.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/zalohy+navrhy/20-2-2019_1/carousel.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/css/styles.css",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/zalohy+navrhy/20-2-2019_1/index.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/zalohy+navrhy/20-2-2019_1/css/styles.css",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/carousel.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/header.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/source/index.css",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/SOURCE_CODE/header.html",
+		"/C/Users/Honza/Desktop/WEBY/JK_LABS/SOURCE_CODE/index.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"1",
+			"$page_login",
+			"$page_home",
+			"$page_view",
+			"component_navbar",
+			"pages",
+			"variables",
+			"mainpage",
+			"foo",
+			"/",
+			":/",
+			"variables.php",
+			"query_view",
+			"$page_logo",
+			"href",
+			"page_a",
+			"href",
+			"include",
+			"localhost",
+			"include"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/wamp/www/backup/damiblog_backup_31_5_2019/.git/COMMIT_EDITMSG",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Commit.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "damiblog.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 204.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
