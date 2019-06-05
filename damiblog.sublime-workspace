@@ -51,15 +51,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/wamp/www/backup/damiblog_backup_31_5_2019/.git/COMMIT_EDITMSG",
-			"settings":
-			{
-				"buffer_size": 576,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -102,6 +93,7 @@
 	"file_history":
 	[
 		"/C/wamp/www/backup/damiblog_backup_31_5_2019/.git/COMMIT_EDITMSG",
+		"/C/wamp/www/damiblog/.git/COMMIT_EDITMSG",
 		"/C/wamp/www/backup/damiblog_backup_31_5_2019/gcn.md",
 		"/C/wamp/www/damiblog/pages/login.php",
 		"/C/wamp/www/damiblog/pages/blogpost_intro.php",
@@ -208,37 +200,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/wamp/www/backup/damiblog_backup_31_5_2019/.git/COMMIT_EDITMSG",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 576,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13,
-								13
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Git Formats/Git Commit.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
