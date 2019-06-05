@@ -5,7 +5,6 @@ define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
 include BASE_DIR . '/utils/constants.php'; // constants
 include BASE_DIR . '/utils/utils.php'; // utils
 include BASE_DIR . '/data/database.php'; // database
-
 ?>
 <html>
 <head>
@@ -20,7 +19,6 @@ include BASE_DIR . '/data/database.php'; // database
 <!--  NAVBAR -->
 <?php
  include '/components/navbar.php';
-
 echo renderPage($_GET);
 ?>
 </body>

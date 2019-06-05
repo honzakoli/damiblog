@@ -5,9 +5,9 @@
 </head>
 <body class="text-center">
 <div class="container">
-<form action="<?=buildUrl("login")?>" method="POST">
+<form action="<?=buildUrl("indexTwo")?>" method="POST">
   username:<br>
-  <input type="text" name="username" placeholder="<?php echo $_POST['username'] ?>"><br>
+  <input type="text" name="username"><br>
   password:<br>
   <input type="text" name="password">
   <br><br>

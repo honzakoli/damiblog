@@ -30,4 +30,12 @@ function renderPage( $params, $page_default =  "indexTwo"  ){
 
 	return include BASE_DIR . "/pages/" . $page . '.php';
 }
-?>
+
+function makeUserName ($username = 'username'){
+// modify username after login
+	if ($username === 'username'){
+		return $username;
+	}
+	return $username;
+
+}

@@ -1,5 +1,9 @@
 <?php
 include BASE_DIR . "/data/database.php";
+
+if (!empty($_POST)){
+	include BASE_DIR . "/components/user.php";
+}
 // $result takes the database data which are further needed into an array
 $result = $database->query('SELECT headline, body, published, id, author FROM post ORDER BY published DESC');
 /* This loop fetches $results data into $row array, then displays blog posts.
