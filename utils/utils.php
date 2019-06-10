@@ -70,8 +70,19 @@ function makeLogout(){
 }
 
 function hashPwd($password){
-	$string = 'jhguiang4541g54a5g';
-	$pwd = md5($password) . $string;
-	echo $pwd;
+	$salt = 'jhguiang4541g54a5g';
+	$pwd = md5($password.$salt);
 	return $pwd;
+}
+
+function verifyUser($username){
+	global $database;
+	$statement = $database->prepare('SELECT * FROM user WHERE username = ?');
+	$statement->bindValue(1, $username);
+	$result = $statement->execute();
+	$rowUser = $result->fetchArray(SQLITE3_ASSOC);
+	if ($rowUser){
+		return $rowUser;
+	}
+	return NULL;
 }
