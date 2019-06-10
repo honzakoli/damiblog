@@ -11,6 +11,9 @@
 				<a class="nav-link" href="<?=buildUrl("indexTwo")?>">Home</span></a>
 			</li>
 			<li class="nav-item">
+				<a class="nav-link" href="<?=buildUrl("registration")?>">Registration</a>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link" href="<?=buildUrl("login")?>">Login</a>
 			</li>
 		</ul>

@@ -1,5 +1,6 @@
 <!-- This page represents the main page of the website -->
 <?php
+session_start();
 define('BASE_DIR', dirname(__FILE__));
 define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
 include BASE_DIR . '/utils/constants.php'; // constants
@@ -18,7 +19,8 @@ include BASE_DIR . '/data/database.php'; // database
 <body>
 <!--  NAVBAR -->
 <?php
- include '/components/navbar.php';
+include '/components/navbar.php';
+isPostEmpty($_POST);
 echo renderPage($_GET);
 ?>
 </body>
