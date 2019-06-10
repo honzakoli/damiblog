@@ -63,7 +63,26 @@ return 0;
 }
 
 function makeLogout(){
+	// makes UI looks like nobody is logged in
 	$_SESSION['username'] = NULL;
 	return buildUrl("indexTwo");
 
+}
+
+function hashPwd($password){
+	$salt = 'jhguiang4541g54a5g';
+	$pwd = md5($password.$salt);
+	return $pwd;
+}
+
+function verifyUser($username){
+	global $database;
+	$statement = $database->prepare('SELECT * FROM user WHERE username = ?');
+	$statement->bindValue(1, $username);
+	$result = $statement->execute();
+	$rowUser = $result->fetchArray(SQLITE3_ASSOC);
+	if ($rowUser){
+		return $rowUser;
+	}
+	return NULL;
 }
