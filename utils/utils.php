@@ -32,10 +32,38 @@ function renderPage( $params, $page_default =  "indexTwo"  ){
 }
 
 function makeUserName ($username = 'username'){
-// modify username after login
+// modify username showed on the page after login
 	if ($username === 'username'){
 		return $username;
 	}
 	return $username;
+
+}
+
+function isPostEmpty($var){
+	// include logout button if there is active user
+	if (!empty($var)){
+		include BASE_DIR . "/components/logoutButton.php";
+	}
+}
+
+function verifyLogin($username, $password){
+// Verify if user already has an account
+global $database;
+$statement = $database->prepare('SELECT username, password FROM user WHERE username = ? AND password = ?');
+$statement->bindValue(1, $username);
+$statement->bindValue(2, $password);
+$result = $statement->execute();
+$row = $result->fetchArray(SQLITE3_ASSOC);
+print_r($row);
+if ( $row){
+	return 1;
+}
+return 0;
+}
+
+function makeLogout(){
+	$_SESSION['username'] = NULL;
+	return buildUrl("indexTwo");
 
 }
