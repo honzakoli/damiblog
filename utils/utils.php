@@ -63,7 +63,15 @@ return 0;
 }
 
 function makeLogout(){
+	// makes UI looks like nobody is logged in
 	$_SESSION['username'] = NULL;
 	return buildUrl("indexTwo");
 
+}
+
+function hashPwd($password){
+	$string = 'jhguiang4541g54a5g';
+	$pwd = md5($password) . $string;
+	echo $pwd;
+	return $pwd;
 }

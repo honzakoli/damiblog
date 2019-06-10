@@ -9,7 +9,8 @@ while ($user = $verify->fetchArray(SQLITE3_ASSOC)){
 	}
 }
 // hash password via md5
-$password = md5($_POST['password']);
+$password = hashPwd($_POST['password']);
+// $password = md5($_POST['password']);
 // insert new user data into database
 $statement = $database->prepare('INSERT INTO user(username, email, password) VALUES (?,?,?)');
 $statement->bindValue(1, $_POST['username']);
