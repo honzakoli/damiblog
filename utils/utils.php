@@ -86,7 +86,7 @@ function verifyUser($username){
 
 function validateUser($username, $email){
 	global $database;
-	$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND email = ?');
+	$statement = $database->prepare('SELECT * FROM user WHERE username = ? OR email = ?');
 	$statement->bindValue(1, $username);
 	$statement->bindValue(2, $email);
 	$result = $statement->execute();
