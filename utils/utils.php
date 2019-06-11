@@ -50,16 +50,15 @@ function isPostEmpty($var){
 function verifyLogin($username, $password){
 // Verify if user already has an account
 global $database;
-$statement = $database->prepare('SELECT username, password FROM user WHERE username = ? AND password = ?');
+$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND password = ?');
 $statement->bindValue(1, $username);
 $statement->bindValue(2, $password);
 $result = $statement->execute();
 $row = $result->fetchArray(SQLITE3_ASSOC);
-print_r($row);
 if ( $row){
-	return 1;
+	return $row;
 }
-return 0;
+return NULL;
 }
 
 function makeLogout(){
@@ -75,6 +74,7 @@ function hashPwd($password){
 	return $pwd;
 }
 
+/*
 function verifyUser($username){
 	global $database;
 	$statement = $database->prepare('SELECT * FROM user WHERE username = ?');
@@ -85,4 +85,20 @@ function verifyUser($username){
 		return $rowUser;
 	}
 	return NULL;
+}
+*/
+
+function validateUser($username, $email){
+global $database;
+$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND email = ?');
+$statement->bindValue(1, $username);
+$statement->bindValue(2, $email);
+$result = $statement->execute();
+$row = $result->fetchArray(SQLITE3_ASSOC);
+if ( $row){
+	return $row;
+}
+return NULL;
+}
+
 }
