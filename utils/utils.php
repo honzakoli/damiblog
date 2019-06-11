@@ -2,12 +2,14 @@
 <?php
 function postIntro($post_body,$length=195){
 //takes the body of the blog post and make it the right lenght for blog spot intro page
-if ( strlen($post_body) > $length ) {
-	return substr($post_body,0 , $length). '...';
-}
-else {
-	return $post_body;
-}
+	if ( strlen($post_body) > $length )
+	{
+		return substr($post_body,0 , $length). '...';
+	}
+	else
+	{
+		return $post_body;
+	}
 }
 
 function dateFormatter($date,$format='j.n.Y'){
@@ -20,7 +22,7 @@ function dateFormatter($date,$format='j.n.Y'){
 function buildUrl($page, $query = []){
 // Builds an URL
 	$query['page'] = $page;
-		return  BASE_URL . "/index.php" . (empty($query) ? '':"?" . http_build_query($query));
+	return  BASE_URL . "/index.php" . (empty($query) ? '':"?" . http_build_query($query));
 }
 
 function renderPage( $params, $page_default =  "indexTwo"  ){
@@ -40,27 +42,19 @@ function makeUserName ($username = 'username'){
 
 }
 
-/*
-function isPostEmpty($var){
-	// include logout button if there is active user
-	if (!empty($var)){
-		include BASE_DIR . "/components/logoutButton.php";
-	}
-}
-*/
-
 function verifyLogin($username, $password){
 // Verify if user already has an account
-global $database;
-$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND password = ?');
-$statement->bindValue(1, $username);
-$statement->bindValue(2, $password);
-$result = $statement->execute();
-$row = $result->fetchArray(SQLITE3_ASSOC);
-if ( $row){
-	return $row;
-}
-return NULL;
+	global $database;
+	$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND password = ?');
+	$statement->bindValue(1, $username);
+	$statement->bindValue(2, $password);
+	$result = $statement->execute();
+	$row = $result->fetchArray(SQLITE3_ASSOC);
+		if ( $row)
+		{
+			return $row;
+		}
+	return NULL;
 }
 
 function makeLogout(){
@@ -91,14 +85,16 @@ function verifyUser($username){
 */
 
 function validateUser($username, $email){
-global $database;
-$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND email = ?');
-$statement->bindValue(1, $username);
-$statement->bindValue(2, $email);
-$result = $statement->execute();
-$row = $result->fetchArray(SQLITE3_ASSOC);
-if ( $row){
-	return $row;
-}
-return NULL;
+	global $database;
+	$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND email = ?');
+	$statement->bindValue(1, $username);
+	$statement->bindValue(2, $email);
+	$result = $statement->execute();
+	$row = $result->fetchArray(SQLITE3_ASSOC);
+		if ( $row)
+		{
+			return $row;
+		}
+
+	return NULL;
 }

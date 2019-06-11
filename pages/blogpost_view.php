@@ -1,8 +1,8 @@
 <?php
-$statement = $database->prepare('SELECT * FROM post WHERE id = ?');
-$statement->bindValue(1,$_GET["id"], PDO::PARAM_INT);
-$result = $statement->execute();
-$row = $result->fetchArray(SQLITE3_ASSOC);
+	$statement = $database->prepare('SELECT * FROM post WHERE id = ?');
+	$statement->bindValue(1,$_GET["id"], PDO::PARAM_INT);
+	$result = $statement->execute();
+	$row = $result->fetchArray(SQLITE3_ASSOC);
 ?>
 <div class="container">
 	<div class="blogpost-full-view">
