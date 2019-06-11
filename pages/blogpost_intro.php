@@ -30,7 +30,7 @@
 							<div class="col-md-4"></div>
 							<!-- read more button -->
 							<div class="col-md-4">
-								<a href="<?= buildUrl('blogpost_view', array('id' => $row['id']))?>"><button type="button" class="btn btn-dark">Read more</button></a>
+								<a href="<?=buildUrl('blogpost_view', array('id' => $row['id']))?>"><button type="button" class="btn btn-dark">Read more</button></a>
 							</div>
 						</div>
 					</div>

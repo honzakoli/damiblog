@@ -12,10 +12,21 @@
 	while ($row = $result->fetchArray(SQLITE3_ASSOC))
 	{
 //include 'blogpost_intro.php';
+
 		include 'blogpost_intro.php';
 		if (!empty($var))
 		{
-			include BASE_DIR . '/components/blogPostButtons.php';
+			$_POST['id'] = $row['id'];
+			print_r($_POST['id']);
+			echo '
+			<div class="deletePostButton text-center">
+			<form action="'.buildUrl("deletePost").'" method="post">
+				<input type="hidden" name="postId" value="'.$row['id'].'">
+				<input type="hidden" name="postHeadline" value="'.$row['headline'].'">
+				<button name="postDelete">Delete Post</button>
+			</form>
+			</div>';
+
 		}
 	}
 ?>
