@@ -17,4 +17,4 @@ $statement->bindValue(3, $password);
 $statement->execute();
 ?>
 
-<h1>Registration complete</h1>
+<h1 class="text-center">Registration complete</h1>
