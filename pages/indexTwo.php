@@ -5,9 +5,7 @@ include BASE_DIR . "/data/database.php";
 if (!empty($_SESSION['username'])){
 	$var = $_SESSION['username'];
 	// include BASE_DIR . "/components/logoutButton.php";
-	include BASE_DIR . "/components/user.php";
-	include BASE_DIR . "/components/createBlogPost.php";
-	include BASE_DIR . "/components/logoutButton.php";
+	// include BASE_DIR . "/components/user.php";
 }
 // $result takes the database data which are further needed into an array
 $result = $database->query('SELECT headline, body, published, id, author FROM post ORDER BY published DESC');

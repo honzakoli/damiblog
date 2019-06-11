@@ -40,12 +40,14 @@ function makeUserName ($username = 'username'){
 
 }
 
+/*
 function isPostEmpty($var){
 	// include logout button if there is active user
 	if (!empty($var)){
 		include BASE_DIR . "/components/logoutButton.php";
 	}
 }
+*/
 
 function verifyLogin($username, $password){
 // Verify if user already has an account
