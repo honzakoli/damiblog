@@ -100,5 +100,3 @@ if ( $row){
 }
 return NULL;
 }
-
-}
