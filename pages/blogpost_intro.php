@@ -7,7 +7,7 @@
 				<div class="row">
 					<!-- picture -->
 					<div class="col-md-6">
-						<img class="img-fluid" src="images/1.png" alt="proste obrazek">
+						<img class="img-fluid" src="../images/1.png" alt="proste obrazek">
 					</div>
 					<!-- headline, post intro, author, date -->
 					<div class="col-md-6">

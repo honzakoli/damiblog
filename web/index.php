@@ -6,7 +6,7 @@
 	define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
 	echo BASE_DIR;
 	include BASE_DIR . '/utils/utils.php'; // utils
-	//include BASE_DIR . '/data/database.php'; // database
+	include BASE_DIR . '/data/database.php'; // database
 ?>
 <html>
 <head>
