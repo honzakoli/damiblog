@@ -42,11 +42,11 @@ function makeUserName ($username = 'username'){
 
 }
 
-function verifyLogin($username, $password){
+function verifyLogin($email, $password){
 // Verify if user already has an account
 	global $database;
-	$statement = $database->prepare('SELECT * FROM user WHERE username = ? AND password = ?');
-	$statement->bindValue(1, $username);
+	$statement = $database->prepare('SELECT * FROM user WHERE email = ? AND password = ?');
+	$statement->bindValue(1, $email);
 	$statement->bindValue(2, $password);
 	$result = $statement->execute();
 	$row = $result->fetchArray(SQLITE3_ASSOC);
