@@ -1,10 +1,12 @@
 <!-- This page represents the main page of the website -->
 <?php
 	session_start();
-	define('BASE_DIR', dirname(__FILE__));
+	// define('BASE_DIR', dirname(__FILE__));
+	define('BASE_DIR', dirname("c:/wamp/www/damiblog/web/"));
 	define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
+	echo BASE_DIR;
 	include BASE_DIR . '/utils/utils.php'; // utils
-	include BASE_DIR . '/data/database.php'; // database
+	//include BASE_DIR . '/data/database.php'; // database
 ?>
 <html>
 <head>
@@ -20,7 +22,7 @@
 <body>
 <!--  NAVBAR -->
 <?php
-	include '/components/navbar.php';
+	include BASE_DIR . '/components/navbar.php';
 	echo renderPage($_GET);
 ?>
 </body>
