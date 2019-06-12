@@ -11,7 +11,7 @@
 				<div class="form-group">
 					<!-- input username -->
 					<label for="username">Username</label>
-					<input type="text" class="form-control" name="username" placeholder="Username">
+					<input type="email" class="form-control" name="email" placeholder="mail@email.com">
 				</div>
 				<div class="form-group">
 					<!-- input password -->
