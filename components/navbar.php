@@ -13,7 +13,7 @@
 				</li>
 				<?php
 					// If there is active user then user dropdown menu is displayed; othervise Login button is displayed
-					if (!$_SESSION['username'])
+					if (!isset($_SESSION['username']))
 					{
 						echo '<li class="nav-item">
 							<a class="nav-link" href="'.buildUrl("login").'">Login</a>

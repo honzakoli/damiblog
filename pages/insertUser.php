@@ -1,7 +1,7 @@
 <?php
 
 // username and email duplicity verification
-	if (validateUser($_POST['username'], $_POST['email'])){
+	if (! validateUser($_POST['username'], $_POST['email'])){
 		echo "Username or email already exists";
 		exit;
 	}

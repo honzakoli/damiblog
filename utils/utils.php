@@ -58,43 +58,27 @@ function verifyLogin($username, $password){
 }
 
 function makeLogout(){
-	// makes UI looks like nobody is logged in
+// makes UI looks like nobody is logged in
 	$_SESSION['username'] = NULL;
 	return buildUrl("indexTwo");
 
 }
 
 function hashPwd($password){
+// hashes password with a random string
 	$salt = 'jhguiang4541g54a5g';
 	$pwd = md5($password.$salt);
 	return $pwd;
 }
 
-/*
-function verifyUser($username){
-	global $database;
-	$statement = $database->prepare('SELECT * FROM user WHERE username = ?');
-	$statement->bindValue(1, $username);
-	$result = $statement->execute();
-	$rowUser = $result->fetchArray(SQLITE3_ASSOC);
-	if ($rowUser){
-		return $rowUser;
-	}
-	return NULL;
-}
-*/
-
 function validateUser($username, $email){
+// checks user database if there is an user with the same username or email
 	global $database;
-	$statement = $database->prepare('SELECT * FROM user WHERE username = ? OR email = ?');
+	$statement = $database->prepare('SELECT count(*) AS totalRows FROM user WHERE username = ? OR email = ? LIMIT 1');
 	$statement->bindValue(1, $username);
 	$statement->bindValue(2, $email);
 	$result = $statement->execute();
 	$row = $result->fetchArray(SQLITE3_ASSOC);
-		if ( $row)
-		{
-			return $row;
-		}
-
-	return NULL;
+	echo $row['totalRows'];
+	return ( $row['totalRows'] === 0 );
 }
