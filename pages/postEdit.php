@@ -34,7 +34,7 @@ $statement->execute();
 						<input type="hidden" name="id" value="<?=$id?>">
 					</div>
 				<!-- submit button -->
-					<button type="submit" name="createPost" class="btn btn-dark">Create Post</button>
+					<button type="submit" name="saveChanges" class="btn btn-dark">Save Changes</button>
 				</form>
 			</div>
 			<div class="col-md-1"></div>

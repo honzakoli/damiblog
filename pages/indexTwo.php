@@ -17,7 +17,6 @@
 		if (!empty($var))
 		{
 			$_POST['id'] = $row['id'];
-			print_r($_POST['id']);
 
 			// delete post button
 			echo '

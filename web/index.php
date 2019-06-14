@@ -4,7 +4,6 @@
 	// define('BASE_DIR', dirname(__FILE__));
 	define('BASE_DIR', dirname("c:/wamp/www/damiblog/web/"));
 	define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
-	echo BASE_DIR;
 	include BASE_DIR . '/utils/utils.php'; // utils
 	include BASE_DIR . '/data/database.php'; // database
 ?>

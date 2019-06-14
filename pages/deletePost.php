@@ -1,6 +1,5 @@
 
 <?php
-	print_r($_POST);
 	$id = $_POST['postId'];
 	$post = $_POST['postHeadline'];
 	$statement = $database->prepare('DELETE FROM post WHERE id = ?');

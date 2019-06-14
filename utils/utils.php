@@ -79,6 +79,5 @@ function validateUser($username, $email){
 	$statement->bindValue(2, $email);
 	$result = $statement->execute();
 	$row = $result->fetchArray(SQLITE3_ASSOC);
-	echo $row['totalRows'];
 	return ( $row['totalRows'] === 0 );
 }
