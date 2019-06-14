@@ -7,20 +7,20 @@
 <div class="container">
 	<div class="blogpost-full-view">
 		<!-- BLOG POST VIEW HEADLINE -->
-		<h2><?= $row['headline'] ?></h2>
+		<h2 class="text-center"><?= $row['headline'] ?></h2>
+		<!-- author and date -->
+		<p class="text-center"><?= $row['author'] ?> | <?=dateFormatter($row['published'])?></p>
 		<!-- BLOG POST VIEW BODY -->
-		<p><?= $row['body'] ?></p>
-			<div class="row">
-				<div class="col-md-6">
-					<!-- BLOG POST VIEW AUTHOR -->
-					<p><?= $row['author'] ?></p>
-					<!-- BACK BUTTON -->
-					<a href="<?=buildUrl("indexTwo")?>"><button type="button" class="btn btn-dark">Back</button></a>
-				</div>
-				<div class="col-md-6">
-					<!-- BLOG POST VIEW DATE PUBLISHED -->
-					<p><?=dateFormatter($row['published'])?></p>
-				</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<p><?= $row['body']?></p>
 			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="buttonStyles text-center">
+		<a href="<?=buildUrl("indexTwo")?>"><button type="button" class="btn btn-dark">Back</button></a>
+		</div>
 	</div>
 </div>
+
