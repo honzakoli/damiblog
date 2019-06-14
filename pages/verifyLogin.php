@@ -5,8 +5,11 @@
 	if ($userdata = verifyLogin($_POST['email'], $password))
 	{
 		$_SESSION['username'] = $userdata['username'];
-		echo "Welcome, " .$userdata['username'] ."!";
+
+	?>
+		<h1 class="text-center">Welcome, <?=$userdata['username']?>!</h1>
+	<?php
 		exit;
 	}
-	echo "Wrong password or username";
 ?>
+		<h1 class="text-center"> Wrong email or password</h1>
