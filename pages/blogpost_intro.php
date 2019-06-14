@@ -34,7 +34,7 @@
 								</div>
 								<!-- delete -->
 								<div class="col">
-									<a href="<?=buildUrl("postDelete", array('id' => $row['id']))?>">
+									<a href="<?=buildUrl("deletePost", array('id' => $row['id']))?>">
 										<img class="img-fluid" src="../images/svg/trash.svg" alt="edit">
 									</a>
 								</div>
