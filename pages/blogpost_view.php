@@ -19,7 +19,16 @@
 			<div class="col-md-2"></div>
 		</div>
 		<div class="buttonStyles text-center">
-		<a href="<?=buildUrl("indexTwo")?>"><button type="button" class="btn btn-dark">Back</button></a>
+		<a href="<?=buildUrl('blogpost_view', array('id' => $row['id'] - 1))?>">
+			<button type="button" class="btn btn-dark"> Previous post </button>
+		</a>
+		<a href="<?=buildUrl('blogpost_view', array('id' => $row['id'] + 1))?>">
+			<button type="button" class="btn btn-dark"> Next post </button>
+		</a>
+		<br><br><br>
+		<a href="<?=buildUrl("indexTwo")?>">
+			<button type="button" class="btn btn-dark">Home page</button>
+		</a>
 		</div>
 	</div>
 </div>
