@@ -15,13 +15,32 @@
 						<h2 class="text-center"><?= $row['headline'] ?></h2>
 						<div class="row">
 							<!-- author -->
-							<div class="col-md-6">
+							<div class="col-md-4">
 								<p class="text-right"><?= $row['author'] ?></p>
 							</div>
 							<!-- date -->
-							<div class="col-md-6">
+							<div class="col-md-4">
 								<p class="text-left"><?= dateFormatter($row['published']) ?></p>
 							</div>
+							<?php
+								if (isset($_SESSION['username']))
+								{
+								?>
+									<!-- edit -->
+								<div class="col">
+									<a href="<?=buildUrl("postEdit", array('id' => $row['id']))?>">
+										<img class="img-fluid" src="../images/svg/pencil.svg" alt="edit">
+									</a>
+								</div>
+								<!-- delete -->
+								<div class="col">
+									<a href="<?=buildUrl("postDelete", array('id' => $row['id']))?>">
+										<img class="img-fluid" src="../images/svg/trash.svg" alt="edit">
+									</a>
+								</div>
+						<?php
+						}
+						?>
 						</div>
 						<!-- intro -->
 						<p><?= postIntro($row['body'])?></p>
