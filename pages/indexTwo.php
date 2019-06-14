@@ -12,12 +12,10 @@
 	while ($row = $result->fetchArray(SQLITE3_ASSOC))
 	{
 //include 'blogpost_intro.php';
-
 		include 'blogpost_intro.php';
 		if (!empty($var))
 		{
 			$_POST['id'] = $row['id'];
-
 			// delete post button
 			echo '
 			<div class="deletePostButton text-center">
@@ -27,7 +25,6 @@
 				<button name="postDelete">Delete Post</button>
 			</form>
 			</div>';
-
 			// edit post button
 			echo '
 			<div class="deletePostButton text-center">
