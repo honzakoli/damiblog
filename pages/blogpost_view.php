@@ -19,13 +19,31 @@
 			<div class="col-md-2"></div>
 		</div>
 		<div class="buttonStyles text-center">
+		<?php
+			if ($row['id'] > 1)
+			{
+		?>
+
+		<!-- previous post button -->
 		<a href="<?=buildUrl('blogpost_view', array('id' => $row['id'] - 1))?>">
 			<button type="button" class="btn btn-dark"> Previous post </button>
 		</a>
+		<?php
+			}
+		?>
+		<?php
+			if ($row['id'] < countPost())
+			{
+		?>
+		<!-- next post button -->
 		<a href="<?=buildUrl('blogpost_view', array('id' => $row['id'] + 1))?>">
 			<button type="button" class="btn btn-dark"> Next post </button>
 		</a>
+		<?php
+			}
+		?>
 		<br><br><br>
+		<!-- home page button -->
 		<a href="<?=buildUrl("indexTwo")?>">
 			<button type="button" class="btn btn-dark">Home page</button>
 		</a>

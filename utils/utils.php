@@ -81,3 +81,13 @@ function validateUser($username, $email){
 	$row = $result->fetchArray(SQLITE3_ASSOC);
 	return ( $row['totalRows'] === 0 );
 }
+
+
+function countPost(){
+// return total number of post in the database
+	global $database;
+	$statement = $database->prepare('SELECT count(*) AS totalRows FROM post');
+	$result = $statement->execute();
+	$row = $result->fetchArray(SQLITE3_ASSOC);
+	return $row['totalRows'];
+}
