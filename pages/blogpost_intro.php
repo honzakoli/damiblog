@@ -24,6 +24,7 @@
 							</div>
 							<?php
 								if (isset($_SESSION['username']))
+								// if there is an active user then add buttons for edit and delete the post
 								{
 								?>
 									<!-- edit -->
@@ -42,7 +43,7 @@
 						}
 						?>
 						</div>
-						<!-- intro -->
+						<!-- post intro -->
 						<p><?= postIntro($row['body'])?></p>
 						<div class="row">
 							<div class="col-md-4"></div>

@@ -5,6 +5,7 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
+				<!-- create post form -->
 				<form action="<?=buildUrl("insertNewPost")?>" method="POST">
 					<div class="form-group">
 						<!-- input headline -->

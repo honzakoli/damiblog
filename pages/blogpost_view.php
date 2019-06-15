@@ -1,4 +1,5 @@
 <?php
+	// get data of the post from the database
 	$statement = $database->prepare('SELECT * FROM post WHERE id = ?');
 	$statement->bindValue(1,$_GET["id"], PDO::PARAM_INT);
 	$result = $statement->execute();
@@ -6,18 +7,19 @@
 ?>
 <div class="container">
 	<div class="blogpost-full-view">
-		<!-- BLOG POST VIEW HEADLINE -->
+		<!-- headline -->
 		<h2 class="text-center"><?= $row['headline'] ?></h2>
 		<!-- author and date -->
 		<p class="text-center"><?= $row['author'] ?> | <?=dateFormatter($row['published'])?></p>
-		<!-- BLOG POST VIEW BODY -->
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
+				<!-- post body -->
 				<p><?= $row['body']?></p>
 			</div>
 			<div class="col-md-2"></div>
 		</div>
+		<!-- prev/next post buttons -->
 		<div class="buttonStyles text-center">
 		<?php
 			if ($row['id'] > 1)
@@ -50,4 +52,3 @@
 		</div>
 	</div>
 </div>
-

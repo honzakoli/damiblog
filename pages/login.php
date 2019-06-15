@@ -1,4 +1,3 @@
-<!-- login form -->
 <div class="container">
 	<div class="loginPage">
 	<!-- heading -->
@@ -6,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-3"></div>
 		<div class="col-md-6">
-			<!-- form -->
+			<!-- login form -->
 			<form action="<?=buildUrl("verifyLogin")?>" method="POST">
 				<div class="form-group">
 					<!-- input username -->
