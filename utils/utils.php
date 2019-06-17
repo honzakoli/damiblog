@@ -25,6 +25,9 @@ function buildUrl($page, $query = []){
 	return  BASE_URL . "/index.php" . (empty($query) ? '':"?" . http_build_query($query));
 }
 
+/**
+* already in classes.php
+*
 function renderPage( $params, $page_default =  "indexTwo"  ){
 // Render requested page
 	global $database;
@@ -41,6 +44,7 @@ function makeUserName ($username = 'username'){
 	return $username;
 
 }
+*/
 
 function verifyLogin($email, $password){
 // Verify if user already has an account
