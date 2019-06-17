@@ -23,7 +23,9 @@
 	// navbar
 	include BASE_DIR . '/components/navbar.php';
 	// render requested page
-	echo renderPage($_GET);
+	include BASE_DIR . '/utils/classes.php';
+	$page = new Application($database);
+	echo $page->renderPage($_GET);
 ?>
 </body>
 </html>

@@ -1,7 +1,6 @@
 <?php
 	// include database file
 	include BASE_DIR . "/data/database.php";
-
 	// catches data of the user after login
 	if (!empty($_SESSION['username']))
 	{
