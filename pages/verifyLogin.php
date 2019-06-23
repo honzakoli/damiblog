@@ -6,8 +6,10 @@
 	$password = hashPwd($_POST['password']);
 	if ($userdata = verifyLogin($_POST['email'], $password))
 	{
+		$_SESSION['username'] = $_POST['email'];
 ?>
 	<!-- login is successfull -->
+
 	<h1 class="text-center">Welcome, <?=$_SESSION['username']?>!</h1>
 <?php
 		exit;
